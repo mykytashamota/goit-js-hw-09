@@ -20,7 +20,7 @@ function createPromise(position, delay) {
 }
 
 function onFromSubmitCreatePromises(e) {
-  event.preventDefault();
+  e.preventDefault();
   const formData = new FormData(e.currentTarget);
   let dataParams = {};
   for (const [key, value] of formData.entries()) {
