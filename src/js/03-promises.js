@@ -32,7 +32,7 @@ function onFromSubmitCreatePromises(e) {
     createPromise(i, delay).then(onSuccess).catch(onError);
     delay += step;
   }
-  form.reset();
+  refs.form.reset();
 }
 
 function onSuccess({ position, delay }) {
